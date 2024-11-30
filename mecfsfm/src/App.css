@@ -1,0 +1,105 @@
+/* General App Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dropdown Menu Styles */
+.navbar .dropdown-menu {
+  background-color: #004d40 !important; /* Teal background */
+  opacity: 1 !important; /* Force full opacity */
+  border: none !important;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.navbar .dropdown-item {
+  background-color: transparent !important; /* Transparent by default */
+  color: white !important; /* White text */
+  font-weight: 500;
+  opacity: 1 !important; /* Full opacity */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: #00897b !important; /* Highlight teal */
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Fix Navbar Dropdown Opacity */
+.navbar .dropdown-toggle {
+  opacity: 1 !important; /* Full visibility for toggles */
+}
+
+.navbar .dropdown-menu.show {
+  opacity: 1 !important; /* Ensure dropdown visibility */
+  visibility: visible !important;
+  transform: translate(0, 0) !important;
+}
+
+/* Additional Fixes */
+.navbar .nav-link {
+  color: white !important; /* Ensure consistent white text */
+  opacity: 1 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #00897b !important; /* Teal hover color */
+}
+
+/* Ensure the layout takes up the full height of the viewport */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the container grows to fill the remaining space */
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Make sure the footer sticks to the bottom */
+main {
+  flex-grow: 1;
+}

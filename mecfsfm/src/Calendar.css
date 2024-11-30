@@ -1,0 +1,33 @@
+/* General styles */
+.react-calendar__tile {
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* Highlight specific Thursdays */
+  .react-calendar__tile.second-thursday {
+    background: #4caf50 !important; /* Green for Wollongong */
+    color: white !important;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .react-calendar__tile.third-thursday {
+    background: #2196f3 !important; /* Blue for Kiama */
+    color: white !important;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .react-calendar__tile.fourth-thursday {
+    background: #ff5722 !important; /* Orange for Shellharbour */
+    color: white !important;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  /* Hover effect */
+  .react-calendar__tile:hover {
+    filter: brightness(1.2);
+  }
+  
